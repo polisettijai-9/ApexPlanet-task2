@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruitify - Online Fruits Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Fruitify 🍎</h1>
+    <p>Fresh Fruits Delivered to Your Doorstep!</p>
+  </header>
+
+  <main>
+    <!-- Contact Form -->
+    <section class="form-section">
+      <h2>Order Your Fruits</h2>
+      <form id="orderForm">
+        <input type="text" placeholder="Your Name" name="name" required />
+        <input type="email" placeholder="Email Address" name="email" required />
+        <input type="text" placeholder="Delivery Address" name="address" required />
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+
+    <!-- Fruit Gallery -->
+    <section class="gallery">
+      <h2>Popular Fruits</h2>
+      <div class="fruit-grid">
+        <div class="fruit">
+          <img src="C:\Users\ASUS\OneDrive\Desktop\apples.jpg" alt="Apple" />
+          <p>Apple - Crisp and refreshing!</p>
+        </div>
+        <div class="fruit">
+          <img src="C:\Users\ASUS\OneDrive\Desktop\banana.jpg" alt="Banana" />
+          <p>Banana - Rich in potassium.</p>
+        </div>
+        <div class="fruit">
+          <img src="C:\Users\ASUS\OneDrive\Desktop\grapes.webp" alt="Grapes" />
+          <p>Grapes - Sweet and juicy!</p>
+        </div>
+        <div class="fruit">
+          <img src="C:\Users\ASUS\OneDrive\Desktop\mangos.jpg" alt="Mango" />
+          <p>Mango - King of fruits!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic To-Do -->
+    <section class="todo">
+      <h2>My Fruit Cart</h2>
+      <input type="text" id="taskInput" placeholder="Enter fruit to add..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
